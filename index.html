@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DON't know what am I doing.</title>
+
+    <style>
+
+
+  
+
+
+
+    </style>
+</head>
+<body>
+
+
+    <center>
+    <div id="Container">
+
+        <h1>Weather Activities:
+
+            😊 ☀️ 🌧️ 🌩️ 🌨️ 🌤️ 🌪️</h1>
+
+
+            <input type="text" placeholder="Enter the Weather" id="WeatherInput">
+            <button onclick="checkWeather()">Submit</button>
+
+
+    </div>
+
+    <div class="weatherOutput">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl2gmc07yHeSeipTU9DF8S81ZfIuR3EhWhTQgr8CejeKPGEANbAbsxliM5oCXepeEbpZQ&usqp=CAU" alt="" style="width: 450px;margin-top: 20px;" id="image">
+
+    </div>
+
+</center>
+
+
+    <script>
+
+
+
+
+
+function checkWeather(){
+
+    let weather=document.getElementById('WeatherInput'). value.toLowerCase();
+    let weatherOutput=document.querySelector('.weatherOutput')
+    var  image=document.querySelector('#image')
+
+
+
+
+switch(weather){
+
+    case 'sunny':
+    weatherOutput.innerHTML='Please, Drink Enough Water and try to take Bath twice a day.☀️'
+
+  
+
+    break;
+
+        case 'Cloudy':
+        weatherOutput.innerHTML='Go for a walk and have a dinner with your love ones. BUt, please, check if there is not too much rain to get you wet.🌧️🌤️'
+
+        
+        break;
+
+        case 'stormy':
+        weatherOutput.innerHTML='Ohh. Close your windows immediately! Avoid Ging outside until it is a necessary🌪️🌪️'
+        break;
+
+        case 'snowy':
+        weatherOutput.innerHTML='It is the best weather to enjoy. Wear good heavy clothes to protect yoruself from the weather and then you can enjoy with your loved ones.🌨️'
+        break;
+
+        case 'rainy':
+        weatherOutput.innerHTML='Woow. You can enjoy outside in the weather if its not too much rain outside.🌧️'
+        break;
+
+       default:
+
+       weatherOutput.innerHTML='I dont think if this weather exists! Sorry!'
+
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
